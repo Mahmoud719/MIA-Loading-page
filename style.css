@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=BerlinSansFBDemiBold");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  background-color:  rgb(22, 84, 49);;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('augustine-wong-3Om4DHcaAc0-unsplash.jpg') center/cover no-repeat fixed;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color:  rgb(22, 84, 49);
+}
+
+#svg {
+  height:250px;
+  width: 250px;
+  stroke:  rgb(22, 84, 49);
+  fill-opacity: 0;
+  stroke-width: 8px;
+  stroke-dasharray: 4500;
+  animation: draw 5s ease-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: rgb(22, 84, 49);
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
